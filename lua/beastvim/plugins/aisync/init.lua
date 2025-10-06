@@ -22,6 +22,7 @@ local cond = function()
 end
 
 return {
+  { import = "beastvim.plugins.aisync.avante", cond = cond },
   { import = "beastvim.plugins.aisync.copilot", cond = cond },
   { import = "beastvim.plugins.aisync.codeium", enabled = false },
   { import = "beastvim.plugins.aisync.supermaven", cond = cond },

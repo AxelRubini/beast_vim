@@ -6,9 +6,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = function(_, opts)
-      opts.ensure_installed =
-        vim.list_extend(opts.ensure_installed or {}, { "clangd", "clang-format", "cpplint", "cppcheck" })
-
+      opts.ensure_installed = vim.list_extend(opts.ensure_installed or {}, { "clangd", "clang-format", "cpplint" })
     end,
   },
   {
@@ -19,8 +17,14 @@ return {
           config = {
             cmd = { "clangd" },
             filetypes = { "c", "cpp", "objc", "objcpp" },
-            root_markers = { ".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", ".git" },
-
+            root_markers = {
+              ".clangd",
+              ".clang-tidy",
+              ".clang-format",
+              "compile_commands.json",
+              "compile_flags.txt",
+              ".git",
+            },
           },
         },
       },
@@ -39,8 +43,8 @@ return {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
-        c = { "cpplint", "cppcheck" },
-        cpp = { "cpplint", "cppcheck" },
+        c = { "cpplint" },
+        cpp = { "cpplint" },
       },
     },
   },

@@ -8,4 +8,5 @@ return {
   { import = "beastvim.plugins.lang.nginx", enabled = true },
   { import = "beastvim.plugins.lang.c", enabled = true },
   { import = "beastvim.plugins.lang.dotnet", enabled = true },
+  { import = "beastvim.plugins.lang.sml", enabled = true },
 }

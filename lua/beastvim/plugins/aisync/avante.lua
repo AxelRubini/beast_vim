@@ -10,7 +10,7 @@ return {
       instructions_file = "avante.md",
 
       -- provider attivo
-      provider = "openai",
+      provider = "copilot",
 
       providers = {
         openai = {
